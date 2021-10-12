@@ -12,6 +12,19 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
       - 1\. 2. 2. 1. Testcase: List
     - 1\. 2. 3. Formatting
 
+## Run in terminal
+
+Unix-like:
+```shell
+# 1. Hello World
+cargo run --manifest-path ./1_hello/Cargo.toml
+```
+
+Windows (Powershell):
+```shell
+# 1. Hello World
+cargo.exe run --manifest-path .\1_hello\Cargo.toml
+```
 
 ## Notes
                                         
@@ -28,7 +41,7 @@ To create a new chapter-related subfolder, please use the following format: `car
 Unix-like:
 ```shell
 N=1; NAME=hello; cargo new "${N}_${NAME}" --name "_${N}_${NAME}"
-```                         
+```
 
 Windows (Powershell):
 ```shell
