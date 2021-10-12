@@ -11,25 +11,24 @@
 
 /// Generate library docs for the following item.
 fn main() {
-    //
-    // --- 1. Hello World ---
     // https://doc.rust-lang.org/rust-by-example/hello.html
-    //
+    println!();
+    println!("--- 1. Hello World ---");
     {
         println!("Hello, world!");
 
-        // --- Activity ---
-        // [x] Click 'Run' above to see the expected output. Next, add a new line with a second println!
-        //     macro so that the output shows:
-        //     > Hello World!
-        //     > I'm a Rustacean!
+        println!();
+        println!("--- Activity ---");
+        //        [x] Click 'Run' above to see the expected output. Next, add a new line with
+        //            a second println! macro so that the output shows:
+        //            > Hello World!
+        //            > I'm a Rustacean!
         println!("I'm a Rustacean!");
     }
 
-    //
-    // --- 1.1 Comments ---
     // https://doc.rust-lang.org/rust-by-example/hello/comment.html
-    //
+    println!();
+    println!("--- 1.1 Comments ---");
     {
         // Regular comments which are ignored by the compiler:
         // Line comments which go to the end of the line.
@@ -43,10 +42,9 @@ fn main() {
         // (see above) Generate library docs for the enclosing item.
     }
 
-    //
-    // --- 1.2 Formatted print ---
     // https://doc.rust-lang.org/rust-by-example/hello/print.html
-    //
+    println!();
+    println!("--- 1.2 Formatted print ---");
     {
         // In general, the `{}` will be automatically replaced with any
         // arguments. These will be stringified.
@@ -94,22 +92,23 @@ fn main() {
         // handling. This will not work.
         // println!("This struct `{}` won't print...", Structure(3));
 
-        // --- Activities ---
-        // [x] Fix the two issues in the above code (see FIXME) so that it runs without error.
-        // [x] Add a println! macro that prints: Pi is roughly 3.142 by controlling
-        //     the number of decimal places shown. For the purposes of this exercise,
-        //     use let pi = 3.141592 as an estimate for pi.
-        //     (Hint: you may need to check the std::fmt documentation for setting
-        //     the number of decimals to display)
+        println!();
+        println!("--- Activities ---");
+        //        [x] Fix the two issues in the above code (see FIXME) so that it runs without
+        //            error.
+        //        [x] Add a println! macro that prints: Pi is roughly 3.142 by controlling
+        //            the number of decimal places shown. For the purposes of this exercise,
+        //            use let pi = 3.141592 as an estimate for pi.
+        //            (Hint: you may need to check the std::fmt documentation for setting
+        //            the number of decimals to display)
 
         let pi = std::f64::consts::PI;
         println!("Pi is roughly {:.3}", pi);
     }
 
-    //
-    // --- 1.2.1 Debug ---
     // https://doc.rust-lang.org/rust-by-example/hello/print/print_debug.html
-    //
+    println!();
+    println!("--- 1.2.1 Debug ---");
     {
         // This structure cannot be printed either with `fmt::Display` or
         // with `fmt::Debug`.
@@ -151,10 +150,9 @@ fn main() {
         println!("Now {:?} will print!", Deep(Structure(7)));
     }
 
-    //
-    // --- 1.2.2 Display ---
     // https://doc.rust-lang.org/rust-by-example/hello/print/print_display.html
-    //
+    println!();
+    println!("--- 1.2.2 Display ---");
     {
         // Import (via `use`) the `fmt` module to make it available.
         use std::fmt;
@@ -229,12 +227,13 @@ fn main() {
         // requires `fmt::Binary` to be implemented. This will not work.
         // println!("What does Point2D look like in binary: {:b}?", point);
 
-        // --- Activity ---
-        // [x] After checking the output of the above example, use the Point2D struct as
-        //     a guide to add a Complex struct to the example. When printed in the same way,
-        //     the output should be:
-        //     > Display: 3.3 + 7.2i
-        //     > Debug: Complex { real: 3.3, imag: 7.2 }
+        println!();
+        println!("--- Activity ---");
+        //        [x] After checking the output of the above example, use the Point2D struct as
+        //            a guide to add a Complex struct to the example. When printed in the same way,
+        //            the output should be:
+        //            > Display: 3.3 + 7.2i
+        //            > Debug: Complex { real: 3.3, imag: 7.2 }
 
         #[derive(Debug)]
         struct Complex {
