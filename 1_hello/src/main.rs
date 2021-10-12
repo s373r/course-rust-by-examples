@@ -6,6 +6,7 @@
 //    1.2 Formatted print
 //        1.2.1 Debug
 //        1.2.2 Display
+//              1.2.2.1 Testcase: List
 
 //! Generate library docs for the enclosing item.
 
@@ -255,5 +256,77 @@ fn main() {
 
         println!("Display: {}", complex_number);
         println!("Debug: {:?}", complex_number);
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/hello/print/print_display/testcase_list.html
+    println!();
+    println!("--- 1.2.2.1 Testcase: List ---");
+    {
+        {
+            use std::fmt; // Import the `fmt` module.
+
+            // Define a structure named `List` containing a `Vec`.
+            struct List(Vec<i32>);
+
+            impl fmt::Display for List {
+                fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+                    // Extract the value using tuple indexing,
+                    // and create a reference to `vec`.
+                    let vec = &self.0;
+
+                    write!(f, "[")?;
+
+                    // Iterate over `v` in `vec` while enumerating the iteration
+                    // count in `count`.
+                    for (count, v) in vec.iter().enumerate() {
+                        // For every element except the first, add a comma.
+                        // Use the ? operator to return on errors.
+                        if count != 0 {
+                            write!(f, ", ")?;
+                        }
+                        write!(f, "{}", v)?;
+                    }
+
+                    // Close the opened bracket and return a fmt::Result value.
+                    write!(f, "]")
+                }
+            }
+
+            let v = List(vec![1, 2, 3]);
+
+            println!("{}", v);
+        }
+
+        println!();
+        println!("--- Activity ---");
+        //        [x] Try changing the program so that the index of each element in the vector
+        //            is also printed. The new output should look like this:
+        //            > [0: 1, 1: 2, 2: 3]
+        {
+            use std::fmt;
+
+            struct List(Vec<i32>);
+
+            impl fmt::Display for List {
+                fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+                    let vec = &self.0;
+
+                    write!(f, "[")?;
+
+                    for (index, value) in vec.iter().enumerate() {
+                        if index != 0 {
+                            write!(f, ", ")?;
+                        }
+                        write!(f, "{}: {}", index, value)?;
+                    }
+
+                    write!(f, "]")
+                }
+            }
+
+            let v = List(vec![1, 2, 3]);
+
+            println!("{}", v);
+        }
     }
 }

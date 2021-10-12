@@ -9,6 +9,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 1\. 2. Formatted print
     - 1\. 2. 1. Debug
     - 1\. 2. 2. Display
+      - 1\. 2. 2. 1. Testcase: List
 
 
 ## Notes
