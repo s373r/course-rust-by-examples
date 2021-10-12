@@ -11,19 +11,20 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 1\. 2. 2. Display
       - 1\. 2. 2. 1. Testcase: List
     - 1\. 2. 3. Formatting
+- [2. Primitives](2_primitives/src/main.rs)
+
 
 ## Run in terminal
 
-Unix-like:
+> ℹ️ Windows: use `cargo.exe` not `cargo`
+
 ```shell
 # 1. Hello World
 cargo run --manifest-path ./1_hello/Cargo.toml
 ```
-
-Windows (Powershell):
 ```shell
-# 1. Hello World
-cargo.exe run --manifest-path .\1_hello\Cargo.toml
+# 2. Primitives
+cargo run --manifest-path ./2_primitives/Cargo.toml
 ```
 
 ## Notes
