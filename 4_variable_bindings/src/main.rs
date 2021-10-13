@@ -4,6 +4,8 @@
 // 4. Variable Bindings
 //    4.1. Mutability
 //    4.2. Scope and Shadowing
+//    4.3. Declare first
+//    4.4. Freezing
 
 fn main() {
     // https://doc.rust-lang.org/rust-by-example/variable_bindings.html
@@ -85,5 +87,53 @@ fn main() {
         // This binding *shadows* the previous binding
         let shadowed_binding = 2;
         println!("shadowed in outer block: {}", shadowed_binding);
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/variable_bindings/declare.html
+    println!();
+    println!("--- 4.3. Declare first ---");
+    {
+        // Declare a variable binding
+        let a_binding;
+
+        {
+            let x = 2;
+
+            // Initialize the binding
+            a_binding = x * x;
+        }
+
+        println!("a binding: {}", a_binding);
+
+        let another_binding;
+
+        // Error! Use of uninitialized binding
+        // println!("another binding: {}", another_binding);
+        // DONE: ^ Comment out this line
+
+        another_binding = 1;
+
+        println!("another binding: {}", another_binding);
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/variable_bindings/freeze.html
+    println!();
+    println!("--- 4.4. Freezing ---");
+    {
+        let mut _mutable_integer = 7i32;
+
+        {
+            // Shadowing by immutable `_mutable_integer`
+            let _mutable_integer = _mutable_integer;
+
+            // Error! `_mutable_integer` is frozen in this scope
+            // _mutable_integer = 50;
+            // DONE: ^ Comment out this line
+
+            // `_mutable_integer` goes out of scope
+        }
+
+        // Ok! `_mutable_integer` is not frozen in this scope
+        _mutable_integer = 3;
     }
 }
