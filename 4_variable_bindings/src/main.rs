@@ -2,6 +2,7 @@
 
 // --- Index ---
 // 4. Variable Bindings
+//    4.1. Mutability
 
 fn main() {
     // https://doc.rust-lang.org/rust-by-example/variable_bindings.html
@@ -25,5 +26,24 @@ fn main() {
 
         // let noisy_unused_variable = 2u32;
         // DONE: ^ Prefix with an underscore to suppress the warning
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html
+    println!();
+    println!("--- 4.1. Mutability ---");
+    {
+        let _immutable_binding = 1;
+        let mut mutable_binding = 1;
+
+        println!("Before mutation: {}", mutable_binding);
+
+        // Ok
+        mutable_binding += 1;
+
+        println!("After mutation: {}", mutable_binding);
+
+        // Error!
+        // _immutable_binding += 1;
+        // DONE: ^ Comment out this line
     }
 }

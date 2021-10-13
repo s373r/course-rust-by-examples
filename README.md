@@ -23,6 +23,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 3\.2.3. Testcase: linked-list
   - 3.\3. constants
 - [4. Variable Bindings](4_variable_bindings/src/main.rs)
+  - 4.\1. Mutability
 
 ## Run in terminal
 
