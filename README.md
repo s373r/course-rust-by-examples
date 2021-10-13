@@ -20,6 +20,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 3.\2. Enums
     - 3\.2.1. use
     - 3\.2.2. C-like
+    - 3\.2.3. Testcase: linked-list
 
 ## Run in terminal
 
