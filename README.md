@@ -32,6 +32,10 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 5.2. Literals
   - 5.3. Inference
   - 5.4. Aliasing
+- [6. Conversion](6_conversion/src/main.rs)
+  - 6.1. From and Into
+  - 6.2. TryFrom and TryInto
+  - 6.3. To and from Strings
 
 ## Run in terminal
 
