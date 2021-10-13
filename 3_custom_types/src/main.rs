@@ -4,6 +4,7 @@
 // 3. Custom types
 //    3.1. Structures
 //    3.2. Enums
+//         3.2.1. use
 
 fn main() {
     // https://doc.rust-lang.org/rust-by-example/custom_types.html
@@ -184,6 +185,7 @@ fn main() {
 
         enum VeryVerboseEnumOfThingsToDoWithNumbers {
             Add,
+            #[allow(dead_code)]
             Subtract,
         }
 
@@ -204,5 +206,45 @@ fn main() {
         }
 
         println!("{}", x.run(1, 2));
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/custom_types/enum.html
+    println!();
+    println!("--- 3.2.1. use ---");
+    {
+        #[allow(dead_code)]
+        enum Status {
+            Rich,
+            Poor,
+        }
+
+        #[allow(dead_code)]
+        enum Work {
+            Civilian,
+            Soldier,
+        }
+
+        // Explicitly `use` each name so they are available without
+        // manual scoping.
+        use Status::{Poor, Rich};
+        // Automatically `use` each name inside `Work`.
+        use Work::*;
+
+        // Equivalent to `Status::Poor`.
+        let status = Poor;
+        // Equivalent to `Work::Civilian`.
+        let work = Civilian;
+
+        match status {
+            // Note the lack of scoping because of the explicit `use` above.
+            Rich => println!("The rich have lots of money!"),
+            Poor => println!("The poor have no money..."),
+        }
+
+        match work {
+            // Note again the lack of scoping.
+            Civilian => println!("Civilians work!"),
+            Soldier => println!("Soldiers fight!"),
+        }
     }
 }

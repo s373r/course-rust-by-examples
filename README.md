@@ -18,6 +18,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 - [3. Custom types](3_custom_types/src/main.rs)
   - 3.\1. Structures
   - 3.\2. Enums
+    - 3\.2.1. use
 
 ## Run in terminal
 
