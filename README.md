@@ -30,23 +30,14 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 
 ## Run in terminal
 
+All chapters have their own folders so binary run commands have the following format: `cargo run --manifest-path ./N_CHAPTER/Cargo.toml`
+
 > ℹ️ Windows: use `cargo.exe` not `cargo`
 
+Example:
+
 ```shell
-# 1. Hello World
-cargo run --manifest-path ./1_hello/Cargo.toml
-```
-```shell
-# 2. Primitives
 cargo run --manifest-path ./2_primitives/Cargo.toml
-```
-```shell
-# 3. Custom types
-cargo run --manifest-path ./3_custom_types/Cargo.toml
-```
-```shell
-# 4. Custom types
-cargo run --manifest-path ./4_variable_bindings/Cargo.toml
 ```
 
 ## Notes
