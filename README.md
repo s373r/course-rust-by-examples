@@ -5,28 +5,28 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 ## Index
 
 - [1. Hello World](1_hello/src/main.rs)
-  - 1\.1. Comments
-  - 1\.2. Formatted print
-    - 1\.2.1. Debug
-    - 1\.2.2. Display
-      - 1\.2.2.1. Testcase: List
-    - 1\.2.3. Formatting
+  - 1.1. Comments
+  - 1.2. Formatted print
+    - 1.2.1. Debug
+    - 1.2.2. Display
+      - 1.2.2.1. Testcase: List
+    - 1.2.3. Formatting
 - [2. Primitives](2_primitives/src/main.rs)
-  - 2\.1. Literals and operators
-  - 2\.2. Tuples
-  - 2\.3. Arrays and Slices
+  - 2.1. Literals and operators
+  - 2.2. Tuples
+  - 2.3. Arrays and Slices
 - [3. Custom types](3_custom_types/src/main.rs)
-  - 3.\1. Structures
-  - 3.\2. Enums
-    - 3\.2.1. use
-    - 3\.2.2. C-like
-    - 3\.2.3. Testcase: linked-list
-  - 3.\3. constants
+  - 3.1. Structures
+  - 3.2. Enums
+    - 3.2.1. use
+    - 3.2.2. C-like
+    - 3.2.3. Testcase: linked-list
+  - 3.3. constants
 - [4. Variable Bindings](4_variable_bindings/src/main.rs)
-  - 4.\1. Mutability
-  - 4.\2. Scope and Shadowing
-  - 4.\3. Declare first
-  - 4.\4. Freezing
+  - 4.1. Mutability
+  - 4.2. Scope and Shadowing
+  - 4.3. Declare first
+  - 4.4. Freezing
 
 ## Run in terminal
 
