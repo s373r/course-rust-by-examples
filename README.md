@@ -15,6 +15,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 2\.1. Literals and operators
   - 2\.2. Tuples
   - 2\.3. Arrays and Slices
+- [3. Custom types](3_custom_types/src/main.rs)
 
 ## Run in terminal
 
@@ -27,6 +28,10 @@ cargo run --manifest-path ./1_hello/Cargo.toml
 ```shell
 # 2. Primitives
 cargo run --manifest-path ./2_primitives/Cargo.toml
+```
+```shell
+# 3. Custom types
+cargo run --manifest-path ./3_custom_types/Cargo.toml
 ```
 
 ## Notes
