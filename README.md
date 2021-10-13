@@ -12,7 +12,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
       - 1\. 2. 2. 1. Testcase: List
     - 1\. 2. 3. Formatting
 - [2. Primitives](2_primitives/src/main.rs)
-
+  - 2\. 1. Literals and operators
 
 ## Run in terminal
 
