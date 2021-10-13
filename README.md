@@ -22,6 +22,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 3\.2.2. C-like
     - 3\.2.3. Testcase: linked-list
   - 3.\3. constants
+- [4. Variable Bindings](4_variable_bindings/src/main.rs)
 
 ## Run in terminal
 
@@ -38,6 +39,10 @@ cargo run --manifest-path ./2_primitives/Cargo.toml
 ```shell
 # 3. Custom types
 cargo run --manifest-path ./3_custom_types/Cargo.toml
+```
+```shell
+# 4. Custom types
+cargo run --manifest-path ./4_variable_bindings/Cargo.toml
 ```
 
 ## Notes
