@@ -5,14 +5,15 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 ## Index
 
 - [1. Hello World](1_hello/src/main.rs)
-  - 1\. 1. Comments
-  - 1\. 2. Formatted print
-    - 1\. 2. 1. Debug
-    - 1\. 2. 2. Display
-      - 1\. 2. 2. 1. Testcase: List
-    - 1\. 2. 3. Formatting
+  - 1\.1. Comments
+  - 1\.2. Formatted print
+    - 1\.2.1. Debug
+    - 1\.2.2. Display
+      - 1\.2.2.1. Testcase: List
+    - 1\.2.3. Formatting
 - [2. Primitives](2_primitives/src/main.rs)
-  - 2\. 1. Literals and operators
+  - 2\.1. Literals and operators
+  - 2\.2. Tuples
 
 ## Run in terminal
 
