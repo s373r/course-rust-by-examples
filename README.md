@@ -27,6 +27,11 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 4.2. Scope and Shadowing
   - 4.3. Declare first
   - 4.4. Freezing
+- [5. Types](5_types/src/main.rs)
+  - 5.1. Casting
+  - 5.2. Literals
+  - 5.3. Inference
+  - 5.4. Aliasing
 
 ## Run in terminal
 
