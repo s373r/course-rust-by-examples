@@ -44,17 +44,16 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 8.2.1 Returning from loops
   - 8.3. while
   - 8.4. for and range
-
-[comment]: <> (  - 8.5. match)
-[comment]: <> (    - 8.5.1 Destructuring)
-[comment]: <> (      - 8.5.1.1. tuples)
-[comment]: <> (      - 8.5.1.2. enums)
-[comment]: <> (      - 8.5.1.3. pointers/refs)
-[comment]: <> (      - 8.5.1.4. structs)
-[comment]: <> (    - 8.5.2 Guards)
-[comment]: <> (    - 8.5.3 Binding)
-[comment]: <> (  - 8.6. if let)
-[comment]: <> (  - 8.7. while let)
+  - 8.5. match
+    - 8.5.1 Destructuring
+      - 8.5.1.1. tuples
+      - 8.5.1.2. enums
+      - 8.5.1.3. pointers/refs
+      - 8.5.1.4. structs
+    - 8.5.2 Guards
+    - 8.5.3 Binding
+  - 8.6. if let
+  - 8.7. while let
 
 ## Run in terminal
 
