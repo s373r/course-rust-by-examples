@@ -40,6 +40,14 @@ cargo run --manifest-path ./3_custom_types/Cargo.toml
 ```
 
 ## Notes
+
+### Comments
+
+- Some of my thoughts are prefixed with `NOTE:`
+  - Example: `// NOTE: Algorithm complexity: O(n)`
+- Resolved course TODOs are prefixed with `DONE:`
+  - Example: `// DONE: ^ Uncomment the above 2 lines to see the compiler error`
+- Other comments copied from the course
                                         
 ### A new chapter
 
