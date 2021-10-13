@@ -2,12 +2,12 @@
 
 // --- Index ---
 // 1. Hello World
-//    1.1 Comments
-//    1.2 Formatted print
-//        1.2.1 Debug
-//        1.2.2 Display
-//              1.2.2.1 Testcase: List
-//        1.2.3 Formatting
+//    1.1. Comments
+//    1.2. Formatted print
+//        1.2.1. Debug
+//        1.2.2. Display
+//               1.2.2.1. Testcase: List
+//        1.2.3. Formatting
 
 //! Generate library docs for the enclosing item.
 
@@ -30,7 +30,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/comment.html
     println!();
-    println!("--- 1.1 Comments ---");
+    println!("--- 1.1. Comments ---");
     {
         // Regular comments which are ignored by the compiler:
         // Line comments which go to the end of the line.
@@ -46,7 +46,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/print.html
     println!();
-    println!("--- 1.2 Formatted print ---");
+    println!("--- 1.2. Formatted print ---");
     {
         // In general, the `{}` will be automatically replaced with any
         // arguments. These will be stringified.
@@ -110,7 +110,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/print/print_debug.html
     println!();
-    println!("--- 1.2.1 Debug ---");
+    println!("--- 1.2.1. Debug ---");
     {
         // This structure cannot be printed either with `fmt::Display` or
         // with `fmt::Debug`.
@@ -154,7 +154,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/print/print_display.html
     println!();
-    println!("--- 1.2.2 Display ---");
+    println!("--- 1.2.2. Display ---");
     {
         // Import (via `use`) the `fmt` module to make it available.
         use std::fmt;
@@ -261,7 +261,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/print/print_display/testcase_list.html
     println!();
-    println!("--- 1.2.2.1 Testcase: List ---");
+    println!("--- 1.2.2.1. Testcase: List ---");
     {
         {
             use std::fmt; // Import the `fmt` module.
@@ -333,7 +333,7 @@ fn main() {
 
     // https://doc.rust-lang.org/rust-by-example/hello/print/fmt.html
     println!();
-    println!("--- 1.2.3 Formatting ---");
+    println!("--- 1.2.3. Formatting ---");
     {
         {
             use std::fmt::{self, Display, Formatter};
