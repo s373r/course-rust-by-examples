@@ -245,7 +245,6 @@ fn main() {
 
         impl fmt::Display for Complex {
             fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-                // Customize so only `x` and `y` are denoted.
                 write!(f, "{} + {}i", self.real, self.imaq)
             }
         }
