@@ -5,6 +5,7 @@
 //    3.1. Structures
 //    3.2. Enums
 //         3.2.1. use
+//         3.2.2. C-like
 
 fn main() {
     // https://doc.rust-lang.org/rust-by-example/custom_types.html
@@ -246,5 +247,33 @@ fn main() {
             Civilian => println!("Civilians work!"),
             Soldier => println!("Soldiers fight!"),
         }
+    }
+
+    // https://doc.rust-lang.org/rust-by-example/custom_types/enum/c_like.html
+    println!();
+    println!("--- 3.2.2. C-like ---");
+    {
+        // enum with implicit discriminator (starts at 0)
+        #[allow(dead_code)]
+        enum Number {
+            Zero,
+            One,
+            Two,
+        }
+
+        // enum with explicit discriminator
+        #[allow(dead_code)]
+        enum Color {
+            Red = 0xff0000,
+            Green = 0x00ff00,
+            Blue = 0x0000ff,
+        }
+
+        // `enums` can be cast as integers.
+        println!("zero is {}", Number::Zero as i32);
+        println!("one is {}", Number::One as i32);
+
+        println!("roses are #{:06x}", Color::Red as i32);
+        println!("violets are #{:06x}", Color::Blue as i32);
     }
 }
