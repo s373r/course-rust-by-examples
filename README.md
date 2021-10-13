@@ -37,6 +37,24 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 6.2. TryFrom and TryInto
   - 6.3. To and from Strings
 - [7. Expressions](7_expressions/src/main.rs)
+- [8. Flow of Control](8_flow_control/src/main.rs)
+  - 8.1. if/else
+  - 8.2. loop
+    - 8.2.1 Nesting and labels
+    - 8.2.1 Returning from loops
+  - 8.3. while
+  - 8.4. for and range
+
+[comment]: <> (  - 8.5. match)
+[comment]: <> (    - 8.5.1 Destructuring)
+[comment]: <> (      - 8.5.1.1. tuples)
+[comment]: <> (      - 8.5.1.2. enums)
+[comment]: <> (      - 8.5.1.3. pointers/refs)
+[comment]: <> (      - 8.5.1.4. structs)
+[comment]: <> (    - 8.5.2 Guards)
+[comment]: <> (    - 8.5.3 Binding)
+[comment]: <> (  - 8.6. if let)
+[comment]: <> (  - 8.7. while let)
 
 ## Run in terminal
 
