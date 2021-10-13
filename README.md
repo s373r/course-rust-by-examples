@@ -16,6 +16,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 2\.2. Tuples
   - 2\.3. Arrays and Slices
 - [3. Custom types](3_custom_types/src/main.rs)
+  - 3.\1. Structures
 
 ## Run in terminal
 
