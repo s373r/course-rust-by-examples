@@ -81,7 +81,7 @@ cargo run --manifest-path ./2_primitives/Cargo.toml
 
 > ℹ️ Cargo projects cannot be named leading from a digit
 
-To create a new chapter-related subfolder, please use the following format: `cargo new N_name --name name` 
+To create a new chapter-related subfolder, please use the following format: `cargo new N_name --name _N_name` 
 
 #### Quick commands
 
