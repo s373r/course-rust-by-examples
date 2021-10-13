@@ -14,6 +14,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 - [2. Primitives](2_primitives/src/main.rs)
   - 2\.1. Literals and operators
   - 2\.2. Tuples
+  - 2\.3. Arrays and Slices
 
 ## Run in terminal
 
