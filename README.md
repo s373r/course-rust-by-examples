@@ -1,4 +1,4 @@
-# Course: Rust By Examples
+# Course: Rust By Example
 
 Course link: https://doc.rust-lang.org/stable/rust-by-example
 
