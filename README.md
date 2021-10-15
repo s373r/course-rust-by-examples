@@ -67,12 +67,12 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
       - 9.2.6.2. Searching through iterators
   - 9.3. Higher Order Functions
   - 9.4. Diverging functions
-  - [10. Modules](10_modules/src/main.rs)
-    - 10.1. Visibility
-    - 10.2. Struct visibility
-    - 10.3. The use declaration
-    - 10.4. super and self
-    - [10.5. File hierarchy](10_modules_file_hierarchy/src/main.rs)
+- [10. Modules](10_modules/src/main.rs)
+  - 10.1. Visibility
+  - 10.2. Struct visibility
+  - 10.3. The use declaration
+  - 10.4. super and self
+  - [10.5. File hierarchy](10_modules_file_hierarchy/src/main.rs)
 
 ## Run in terminal
 
