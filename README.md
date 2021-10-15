@@ -86,7 +86,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 
 All chapters have their own folders so binary run commands have the following format: `cargo run --manifest-path ./N_CHAPTER/Cargo.toml`
 
-> ℹ️ Windows: use `cargo.exe` not `cargo`
+> ℹ️ Windows: use PowerShell
 
 Example:
 
