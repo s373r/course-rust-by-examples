@@ -81,6 +81,11 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 12.2. Conventions
   - 12.3. Testing
   - 12.4. Build Scripts
+- [13. Attributes](13_attributes/src/main.rs)
+  - 13.1. dead_code
+  - 13.2. Crates
+  - 13.3. cfg
+    - 13.3.1. Custom
 
 ## Run in terminal
 
