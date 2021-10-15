@@ -86,6 +86,21 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 13.2. Crates
   - 13.3. cfg
     - 13.3.1. Custom
+- [14. Generics](14_generics/src/main.rs)
+  - 14.1. Functions
+  - 14.2. Implementation
+  - 14.3. Traits
+  - 14.4. Bounds
+    - 14.4.1. Testcase: empty bounds
+
+[comment]: <> (  - 14.5. Multiple bounds)
+[comment]: <> (  - 14.6. Where clauses)
+[comment]: <> (  - 14.7. New Type Idiom)
+[comment]: <> (  - 14.8. Associated items)
+[comment]: <> (    - 14.8.1. The Problem)
+[comment]: <> (    - 14.8.2. Associated types)
+[comment]: <> (  - 14.9. Phantom type parameters)
+[comment]: <> (    - 14.9.1. Testcase: unit clarification)
 
 ## Run in terminal
 
