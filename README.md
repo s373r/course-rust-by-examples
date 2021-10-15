@@ -92,15 +92,14 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 14.3. Traits
   - 14.4. Bounds
     - 14.4.1. Testcase: empty bounds
-
-[comment]: <> (  - 14.5. Multiple bounds)
-[comment]: <> (  - 14.6. Where clauses)
-[comment]: <> (  - 14.7. New Type Idiom)
-[comment]: <> (  - 14.8. Associated items)
-[comment]: <> (    - 14.8.1. The Problem)
-[comment]: <> (    - 14.8.2. Associated types)
-[comment]: <> (  - 14.9. Phantom type parameters)
-[comment]: <> (    - 14.9.1. Testcase: unit clarification)
+  - 14.5. Multiple bounds
+  - 14.6. Where clauses
+  - 14.7. New Type Idiom
+  - 14.8. Associated items
+    - 14.8.1. The Problem
+      - 14.8.2. Associated types
+  - 14.9. Phantom type parameters
+    - 14.9.1. Testcase: unit clarification
 
 ## Run in terminal
 
