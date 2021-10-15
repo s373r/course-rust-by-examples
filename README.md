@@ -76,6 +76,11 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 - [11. Creates](11_crates/src/main.rs)
   - [11.1. Creating a Library](11_crates_library)
   - 11.2. Using a Library
+- [12. Cargo](https://doc.rust-lang.org/rust-by-example/cargo.html) [link]
+  - 12.1. Dependencies
+  - 12.2. Conventions
+  - 12.3. Testing
+  - 12.4. Build Scripts
 
 ## Run in terminal
 
