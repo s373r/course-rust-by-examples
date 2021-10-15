@@ -100,6 +100,36 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
       - 14.8.2. Associated types
   - 14.9. Phantom type parameters
     - 14.9.1. Testcase: unit clarification
+- [15. Scoping rules](15_scoping_rules/src/main.rs)
+  - 15.1. RAII
+  - 15.2. Ownership and moves
+    - 15.2.1. Mutability
+    - 15.2.2. Partial moves
+  - 15.3. Borrowing
+    - 15.3.1. Mutability
+    - 15.3.2. Aliasing
+
+[comment]: <> (    - 15.3.3. The ref pattern)
+
+[comment]: <> (  - 15.4. Lifetimes)
+
+[comment]: <> (    - 15.4.1. Explicit annotation)
+
+[comment]: <> (    - 15.4.2. Functions)
+
+[comment]: <> (    - 15.4.3. Methods)
+
+[comment]: <> (    - 15.4.4. Structs)
+
+[comment]: <> (    - 15.4.5. Traits)
+
+[comment]: <> (    - 15.4.6. Bounds)
+
+[comment]: <> (    - 15.4.7. Coercion)
+
+[comment]: <> (    - 15.4.8. Static)
+
+[comment]: <> (    - 15.4.9. Elision)
 
 ## Run in terminal
 
