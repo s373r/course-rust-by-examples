@@ -73,6 +73,9 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 10.3. The use declaration
   - 10.4. super and self
   - [10.5. File hierarchy](10_modules_file_hierarchy/src/main.rs)
+- [11. Creates](11_crates/src/main.rs)
+  - [11.1. Creating a Library](11_crates_library)
+  - 11.2. Using a Library
 
 ## Run in terminal
 
