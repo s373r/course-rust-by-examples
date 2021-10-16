@@ -129,6 +129,14 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 16.7. Clone
   - 16.8. Supertraits
   - 16.9. Disambiguating overlapping traits
+- [17. macro_rules!](17_macro_rules)
+  - 17.1. Syntax
+    - 17.1.1. Designators
+    - 17.1.2. Overload
+    - 17.1.3. Repeat
+  - 17.2. DRY (Don't Repeat Yourself)
+  - 17.3. Domain Specific Languages (DSLs)
+  - 17.4. Variadic Interfaces
 
 ## Run in terminal
 
