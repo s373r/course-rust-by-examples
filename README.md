@@ -108,28 +108,17 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 15.3. Borrowing
     - 15.3.1. Mutability
     - 15.3.2. Aliasing
-
-[comment]: <> (    - 15.3.3. The ref pattern)
-
-[comment]: <> (  - 15.4. Lifetimes)
-
-[comment]: <> (    - 15.4.1. Explicit annotation)
-
-[comment]: <> (    - 15.4.2. Functions)
-
-[comment]: <> (    - 15.4.3. Methods)
-
-[comment]: <> (    - 15.4.4. Structs)
-
-[comment]: <> (    - 15.4.5. Traits)
-
-[comment]: <> (    - 15.4.6. Bounds)
-
-[comment]: <> (    - 15.4.7. Coercion)
-
-[comment]: <> (    - 15.4.8. Static)
-
-[comment]: <> (    - 15.4.9. Elision)
+    - 15.3.3. The ref pattern
+  - 15.4. Lifetimes
+    - 15.4.1. Explicit annotation
+    - 15.4.2. Functions
+    - 15.4.3. Methods
+    - 15.4.4. Structs
+    - 15.4.5. Traits
+    - 15.4.6. Bounds
+    - 15.4.7. Coercion
+    - 15.4.8. Static
+    - 15.4.9. Elision
 
 ## Run in terminal
 
