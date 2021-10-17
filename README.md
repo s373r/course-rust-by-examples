@@ -143,30 +143,18 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 18.2.1. Unpacking options with ?
     - 18.2.2. Combinators: map
     - 18.2.3. Combinators: and_then
-
-[comment]: <> (  - 18.3. Result)
-
-[comment]: <> (    - 18.3.1. map for Result)
-
-[comment]: <> (    - 18.3.2. aliases for Result)
-
-[comment]: <> (    - 18.3.3. Early returns)
-
-[comment]: <> (    - 18.3.4. Introducing ?)
-
-[comment]: <> (  - 18.4. Multiple error types)
-
-[comment]: <> (    - 18.4.1. Pulling Results out of Options)
-
-[comment]: <> (    - 18.4.2. Defining an error type)
-
-[comment]: <> (    - 18.4.3. Boxing errors)
-
-[comment]: <> (    - 18.4.4. Other uses of ?)
-
-[comment]: <> (    - 18.4.5. Wrapping errors)
-
-[comment]: <> (  - 18.5. Iterating over Results)
+  - 18.3. Result
+    - 18.3.1. map for Result
+    - 18.3.2. aliases for Result
+    - 18.3.3. Early returns
+    - 18.3.4. Introducing ?
+  - 18.4. Multiple error types
+    - 18.4.1. Pulling Results out of Options
+    - 18.4.2. Defining an error type
+    - 18.4.3. Boxing errors
+    - 18.4.4. Other uses of ?
+    - 18.4.5. Wrapping errors
+  - 18.5. Iterating over Results
 
 ## Run in terminal
 
