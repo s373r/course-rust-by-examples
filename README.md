@@ -4,40 +4,40 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 
 ## Index
 
-- [1. Hello World](1_hello/src/main.rs)
+- [1. Hello World](01_hello/src/main.rs)
   - 1.1. Comments
   - 1.2. Formatted print
     - 1.2.1. Debug
     - 1.2.2. Display
       - 1.2.2.1. Testcase: List
     - 1.2.3. Formatting
-- [2. Primitives](2_primitives/src/main.rs)
+- [2. Primitives](02_primitives/src/main.rs)
   - 2.1. Literals and operators
   - 2.2. Tuples
   - 2.3. Arrays and Slices
-- [3. Custom types](3_custom_types/src/main.rs)
+- [3. Custom types](03_custom_types/src/main.rs)
   - 3.1. Structures
   - 3.2. Enums
     - 3.2.1. use
     - 3.2.2. C-like
     - 3.2.3. Testcase: linked-list
   - 3.3. constants
-- [4. Variable Bindings](4_variable_bindings/src/main.rs)
+- [4. Variable Bindings](04_variable_bindings/src/main.rs)
   - 4.1. Mutability
   - 4.2. Scope and Shadowing
   - 4.3. Declare first
   - 4.4. Freezing
-- [5. Types](5_types/src/main.rs)
+- [5. Types](05_types/src/main.rs)
   - 5.1. Casting
   - 5.2. Literals
   - 5.3. Inference
   - 5.4. Aliasing
-- [6. Conversion](6_conversion/src/main.rs)
+- [6. Conversion](06_conversion/src/main.rs)
   - 6.1. From and Into
   - 6.2. TryFrom and TryInto
   - 6.3. To and from Strings
-- [7. Expressions](7_expressions/src/main.rs)
-- [8. Flow of Control](8_flow_control/src/main.rs)
+- [7. Expressions](07_expressions/src/main.rs)
+- [8. Flow of Control](08_flow_control/src/main.rs)
   - 8.1. if/else
   - 8.2. loop
     - 8.2.1 Nesting and labels
@@ -54,7 +54,7 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 8.5.3 Binding
   - 8.6. if let
   - 8.7. while let
-- [9. Functions](9_functions/src/main.rs)
+- [9. Functions](09_functions/src/main.rs)
   - 9.1. Associated functions & Methods
   - 9.2. Closures
     - 9.2.1. Capturing
@@ -177,7 +177,7 @@ All chapters have their own folders so binary run commands have the following fo
 Example:
 
 ```shell
-cargo run --manifest-path ./2_primitives/Cargo.toml
+cargo run --manifest-path ./02_primitives/Cargo.toml
 ```
 
 ## Notes
