@@ -217,5 +217,3 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me) for commit messages
 ## License
 
 [GPLv3+](LICENSE)
-
-// todo rename dirs to [01, 10]
