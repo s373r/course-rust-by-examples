@@ -137,6 +137,36 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 17.2. DRY (Don't Repeat Yourself)
   - 17.3. Domain Specific Languages (DSLs)
   - 17.4. Variadic Interfaces
+- [18. Error handling](18_error_handling/src/main.rs)
+  - 18.1. panic
+  - 18.2. Option & unwrap
+    - 18.2.1. Unpacking options with ?
+    - 18.2.2. Combinators: map
+    - 18.2.3. Combinators: and_then
+
+[comment]: <> (  - 18.3. Result)
+
+[comment]: <> (    - 18.3.1. map for Result)
+
+[comment]: <> (    - 18.3.2. aliases for Result)
+
+[comment]: <> (    - 18.3.3. Early returns)
+
+[comment]: <> (    - 18.3.4. Introducing ?)
+
+[comment]: <> (  - 18.4. Multiple error types)
+
+[comment]: <> (    - 18.4.1. Pulling Results out of Options)
+
+[comment]: <> (    - 18.4.2. Defining an error type)
+
+[comment]: <> (    - 18.4.3. Boxing errors)
+
+[comment]: <> (    - 18.4.4. Other uses of ?)
+
+[comment]: <> (    - 18.4.5. Wrapping errors)
+
+[comment]: <> (  - 18.5. Iterating over Results)
 
 ## Run in terminal
 
@@ -187,3 +217,5 @@ This project uses [Gitmoji](https://gitmoji.carloscuesta.me) for commit messages
 ## License
 
 [GPLv3+](LICENSE)
+
+// todo rename dirs to [01, 10]
