@@ -202,12 +202,12 @@ To create a new chapter-related subfolder, please use the following format: `car
 
 Unix-like:
 ```shell
-N=1; NAME=hello; cargo new "${N}_${NAME}" --name "_${N}_${NAME}"
+N=01; NAME=hello; cargo new "${N}_${NAME}" --name "_${N}_${NAME}"
 ```
 
 Windows (Powershell):
 ```shell
-$N='1'; $NAME='hello'; cargo new ${N}_${NAME} --name _${N}_${NAME}
+$N='01'; $NAME='hello'; cargo new ${N}_${NAME} --name _${N}_${NAME}
 ```
 
 ## Code conduction
