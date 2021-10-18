@@ -168,6 +168,29 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 19.7.2. HashSet
   - 19.8. Rc
   - 19.9. Arc
+- [20. Std misc](20_std_misc/src/main.rs)
+  - 20.1. Threads
+    - 20.1.1. Testcase: map-reduce
+  - 20.2. Channels
+  - 20.3. Path
+  - 20.4. File I/O
+    - 20.4.1. open
+    - 20.4.2. create
+    - 20.4.3. read_lines
+
+[comment]: <> (  - 20.5. Child processes)
+
+[comment]: <> (    - 20.5.1. Pipes)
+
+[comment]: <> (    - 20.5.2. Wait)
+
+[comment]: <> (  - 20.6. Filesystem Operations)
+
+[comment]: <> (  - 20.7. Program arguments)
+
+[comment]: <> (    - 20.7.1. Argument parsing)
+
+[comment]: <> (  - 20.8. Foreign Function Interface)
 
 ## Run in terminal
 
