@@ -155,6 +155,19 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 18.4.4. Other uses of ?
     - 18.4.5. Wrapping errors
   - 18.5. Iterating over Results
+- [19. Std library types](19_std_library_types/src/main.rs)
+  - 19.1. Box, stack and heap
+  - 19.2. Vectors
+  - 19.3. Strings
+  - 19.4. Option
+  - 19.5. Result
+    - 19.5.1. ?
+  - 19.6. panic!
+  - 19.7. HashMap
+    - 19.7.1. Alternate/custom key types
+    - 19.7.2. HashSet
+  - 19.8. Rc
+  - 19.9. Arc
 
 ## Run in terminal
 
