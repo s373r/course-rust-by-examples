@@ -177,12 +177,9 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
     - 20.4.1. open
     - 20.4.2. create
     - 20.4.3. read_lines
-
-[comment]: <> (  - 20.5. Child processes)
-
-[comment]: <> (    - 20.5.1. Pipes)
-
-[comment]: <> (    - 20.5.2. Wait)
+  - 20.5. Child processes
+    - 20.5.1. Pipes
+    - 20.5.2. Wait
 
 [comment]: <> (  - 20.6. Filesystem Operations)
 

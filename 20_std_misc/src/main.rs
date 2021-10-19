@@ -338,16 +338,98 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     }
 
     // https://doc.rust-lang.org/stable/rust-by-example/std_misc/process.html
-    // println!("\n--- 20.5. Child processes ---");
-    {}
+    println!("\n--- 20.5. Child processes ---");
+    {
+        use std::process::Command;
+
+        let output = Command::new("rustc")
+            .arg("--version")
+            .output()
+            .unwrap_or_else(|e| panic!("failed to execute process: {}", e));
+
+        if output.status.success() {
+            let s = String::from_utf8_lossy(&output.stdout);
+
+            print!("rustc succeeded and stdout was:\n{}", s);
+        } else {
+            let s = String::from_utf8_lossy(&output.stderr);
+
+            print!("rustc failed and stderr was:\n{}", s);
+        }
+    }
 
     // https://doc.rust-lang.org/stable/rust-by-example/std_misc/process/pipe.html
-    // println!("\n--- 20.5.1. Pipes ---");
-    {}
+    println!("\n--- 20.5.1. Pipes ---");
+    {
+        if cfg!(windows) {
+            println!("Windows has not `wc` command. Exiting...");
+        } else {
+            use std::io::prelude::*;
+            use std::process::{Command, Stdio};
+
+            static PANGRAM: &'static str = "the quick brown fox jumped over the lazy dog\n";
+
+            // Spawn the `wc` command
+            let process = match Command::new("wc")
+                .stdin(Stdio::piped())
+                .stdout(Stdio::piped())
+                .spawn()
+            {
+                Err(why) => panic!("couldn't spawn wc: {}", why),
+                Ok(process) => process,
+            };
+
+            // Write a string to the `stdin` of `wc`.
+            //
+            // `stdin` has type `Option<ChildStdin>`, but since we know this instance
+            // must have one, we can directly `unwrap` it.
+            match process.stdin.unwrap().write_all(PANGRAM.as_bytes()) {
+                Err(why) => panic!("couldn't write to wc stdin: {}", why),
+                Ok(_) => println!("sent pangram to wc"),
+            }
+
+            // Because `stdin` does not live after the above calls, it is `drop`ed,
+            // and the pipe is closed.
+            //
+            // This is very important, otherwise `wc` wouldn't start processing the
+            // input we just sent.
+
+            // The `stdout` field also has type `Option<ChildStdout>` so must be unwrapped.
+            let mut s = String::new();
+            match process.stdout.unwrap().read_to_string(&mut s) {
+                Err(why) => panic!("couldn't read wc stdout: {}", why),
+                Ok(_) => print!("wc responded with:\n{}", s),
+            }
+        }
+    }
 
     // https://doc.rust-lang.org/stable/rust-by-example/std_misc/process/wait.html
-    // println!("\n--- 20.5.2. Wait ---");
-    {}
+    println!("\n--- 20.5.2. Wait ---");
+    {
+        use std::collections::VecDeque;
+        use std::process::Command;
+
+        fn new_command() -> Command {
+            let raw_command = if cfg!(windows) {
+                "powershell -command sleep 5"
+            } else {
+                "sleep 5"
+            };
+
+            let mut command: VecDeque<&str> = raw_command.split_whitespace().collect();
+            let program = command.pop_front().unwrap();
+            let mut child = Command::new(program);
+
+            child.args(command);
+
+            child
+        }
+
+        let mut child = new_command().spawn().unwrap();
+        let _result = child.wait().unwrap();
+
+        println!("reached end of main");
+    }
 
     // https://doc.rust-lang.org/stable/rust-by-example/std_misc/fs.html
     // println!("\n--- 20.6. Filesystem Operations ---");
