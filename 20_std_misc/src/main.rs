@@ -406,21 +406,40 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     // https://doc.rust-lang.org/stable/rust-by-example/std_misc/process/wait.html
     println!("\n--- 20.5.2. Wait ---");
     {
-        use std::collections::VecDeque;
         use std::process::Command;
 
+        // NOTE: `new_command()` v1 (with an allocation, `.collect()`)
+        // fn new_command() -> Command {
+        //     use std::collections::VecDeque;
+        //
+        //     let raw_command = if cfg!(windows) {
+        //         "powershell -command sleep 5"
+        //     } else {
+        //         "sleep 5"
+        //     };
+        //
+        //     let mut command: VecDeque<&str> = raw_command.split_whitespace().collect();
+        //     let program = command.pop_front().unwrap();
+        //     let mut child = Command::new(program);
+        //
+        //     child.args(command);
+        //
+        //     child
+        // }
+
+        // NOTE: `new_command()` v2 (w/o extra allocations)
         fn new_command() -> Command {
-            let raw_command = if cfg!(windows) {
+            let command = if cfg!(windows) {
                 "powershell -command sleep 5"
             } else {
                 "sleep 5"
             };
 
-            let mut command: VecDeque<&str> = raw_command.split_whitespace().collect();
-            let program = command.pop_front().unwrap();
+            let mut command_it = command.split_whitespace();
+            let program = command_it.next().unwrap();
             let mut child = Command::new(program);
 
-            child.args(command);
+            child.args(command_it);
 
             child
         }
