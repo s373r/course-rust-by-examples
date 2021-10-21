@@ -192,6 +192,9 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
 - [22. Unsafe Operations](22_unsafe_operations/src/main.rs)
 - [23. Compatibility](23_compatibility/src/main.rs)
   - 23.1. Raw identifiers
+- [24. Meta](https://doc.rust-lang.org/stable/rust-by-example/meta.html) `[link]`
+  - 24.1. Documentation
+  - 24.2. Playpen
 
 ## Run in terminal
 
