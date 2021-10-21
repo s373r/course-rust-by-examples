@@ -190,6 +190,8 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 21.3. Integration testing
   - 21.4. Development dependencies
 - [22. Unsafe Operations](22_unsafe_operations/src/main.rs)
+- [23. Compatibility](23_compatibility/src/main.rs)
+  - 23.1. Raw identifiers
 
 ## Run in terminal
 
