@@ -180,14 +180,10 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 20.5. Child processes
     - 20.5.1. Pipes
     - 20.5.2. Wait
-
-[comment]: <> (  - 20.6. Filesystem Operations)
-
-[comment]: <> (  - 20.7. Program arguments)
-
-[comment]: <> (    - 20.7.1. Argument parsing)
-
-[comment]: <> (  - 20.8. Foreign Function Interface)
+  - 20.6. Filesystem Operations
+  - 20.7. Program arguments
+    - 20.7.1. Argument parsing
+  - 20.8. Foreign Function Interface
 
 ## Run in terminal
 
