@@ -2,6 +2,8 @@
 
 Course link: https://doc.rust-lang.org/stable/rust-by-example
 
+Status: ✅
+
 ## Index
 
 - [1. Hello World](01_hello/src/main.rs)
