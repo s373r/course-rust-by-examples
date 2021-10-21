@@ -184,6 +184,11 @@ Course link: https://doc.rust-lang.org/stable/rust-by-example
   - 20.7. Program arguments
     - 20.7.1. Argument parsing
   - 20.8. Foreign Function Interface
+- [21. Testing](21_testing/src/main.rs)
+  - 21.1. Unit testing
+  - 21.2. Documentation testing
+  - 21.3. Integration testing
+  - 21.4. Development dependencies
 
 ## Run in terminal
 
